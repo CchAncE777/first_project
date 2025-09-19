@@ -1,1 +1,1 @@
-print("Hello world!")
+print("Привет ", input("Как тебя зовут?")) 
