@@ -1,0 +1,19 @@
+import numpy as np
+import pandas as pd
+import random
+
+r = {}
+
+for i in range(1,10):   
+    name = input('Введите имя: ')
+    sname = input('Введите фамилию: ')
+    pname = input('Введите отчество: ')
+    date = input('Введите дату рождения: ')
+    id = random.randint(1000,9999)
+
+    n = {'Имя': name, 'Фамилия': sname, 'Отчество': pname, 'Дата': date}
+    
+    r.update({id : n})
+
+df = pd.DataFrame(r.values(), index=r.keys())
+print(df)
