@@ -16,4 +16,6 @@ for i in range(1,10):
     r.update({id : n})
 
 df = pd.DataFrame(r.values(), index=r.keys())
-print(df)
+
+df.to_csv('d:/1.csv', encoding='utf-8')
+df1 = pd.read_csv('D:/1.csv')
