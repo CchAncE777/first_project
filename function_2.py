@@ -25,7 +25,7 @@ def hello(*args):
 print(hello('go up', "jjoa"))
 
 def hello(**kwargs):
-    return(f"Hello {' '.join(kwargs)}")
-print(hello())
+    return(f"Hello {kwargs}")
+print(hello(n = 'hgh'))
 
 
